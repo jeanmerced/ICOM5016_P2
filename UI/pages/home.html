@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" ng-app="PMAPP">-->
+<!--<head>-->
+<!--     <meta charset="UTF-8">-->
+<!--    <title>HOME PAGE</title>-->
+
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    &lt;!&ndash; Bootstrap &ndash;&gt;-->
+<!--&lt;!&ndash; 	<link href="css/bootstrap.css" rel="stylesheet">-->
+<!--    <script src="js/bootstrap.js"></script>-->
+<!--    <script src="js/bootstrap.bundle.js"></script>&ndash;&gt;-->
+
+<!--    &lt;!&ndash; Materialize &ndash;&gt;-->
+<!--    <link href = "css/materialize.css" rel = "stylesheet">-->
+<!--    <script src="js/materialize.js"></script>-->
+<!--    &lt;!&ndash; AngularJS &ndash;&gt;-->
+<!--    <script src="js/angular.js"></script>-->
+<!--    <script src="js/angular-route.js"></script>-->
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+<!--</head>-->
+<!--<body>-->
+<h5><center>Home Page</center></h5>
+<center><img src="static/pj.jpg" width="830" height="335"></center>
+ <aside>
+     <center><h5>Dash Board</h5></center>
+
+     <ul>
+         <center><a class="waves-effect  blue lighten-1 btn-small" ng-click="homeCtrl.viewGroups()">Groups</a>
+         <a class="waves-effect  blue lighten-1 btn-small" ng-click="homeCtrl.viewUsers()">Users</a>
+         <a class="waves-effect  blue lighten-1 btn-small" ng-click="homeCtrl.viewChats()">Messages</a></center>
+
+     </ul>
+
+
+ </aside>
+<div ng-cloak style="align-content: center">
+
+
+    <!--<div  id="chat-list" style="height:300px;overflow:auto">-->
+    <div>
+        <!-- Here come the messages in the chat, each one presented in card -->
+
+        <div>
+            <!-- This card prodives space for the message and Like/dislike buttons -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <!-- Card Title is the person who write the message -->
+
+                            <!-- Here comes the message text -->
+                            <p>
+
+                                TRENDING TOPICS: hashtag: {{homeCtrl.trendingTopics.hashtag}} 
+                            </p>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div>
+        <!-- Here come the messages in the chat, each one presented in card -->
+
+        <div>
+            <!-- This card prodives space for the message and Like/dislike buttons -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <!-- Card Title is the person who write the message -->
+
+                            <!-- Here comes the message text -->
+                            <p>
+
+                                TOTAL POSTS PER DAY: date: {{homeCtrl.postCounter.date}} total: {{homeCtrl.postCounter.number_of_reactions}}
+                                <br>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--</body>-->
+<!--</html>-->
